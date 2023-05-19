@@ -1,0 +1,25 @@
+GET http://localhost:3333/memories
+
+###
+POST  http://localhost:3333/memories
+Content-Type: application/json
+
+{
+  "content": "Hello",
+  "coverUrl": "https://github.com/ricardoaugusto1210",
+  "isPublic": 1
+}
+###
+
+PUT http://localhost:3333/memories/0634bcaf-bbb2-4143-a3dc-cf840b77adee
+Content-Type: application/json
+
+{
+  "content": "testandoooooooooooo",
+  "coverUrl": "https://github.com/ricardoaugusto1210.png",
+  "isPublic": true
+}
+###
+DELETE http://localhost:3333/memories/0f6d351b-c756-4277-936a-781132282e83
+Content-Type: application/json
+
